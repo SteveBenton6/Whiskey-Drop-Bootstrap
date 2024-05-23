@@ -6,6 +6,10 @@
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/82f70701b4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -43,7 +47,7 @@ Whiskeys
   </nav>
   <!-- /.navbar -->
 
-    <article class="container mt-3">
+    <div class="container alert-container">
       <div class="row d-none d-sm-block">
         <div class="col-12">
           <div class="alert alert-warning">
@@ -51,96 +55,104 @@ Whiskeys
           </div>
         </div>
       </div>
+    </div>
         <!-- Callout -->
-        <div class="row">
-            <div class="col-12">
-                <section class="callout jumbotron text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
-                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. 
-                        <s class="d-none d-sm-inline">€19.99</s>
-                        <span class="d-inline d-sm-none"><br></span>
-                        <strong><mark>First one is free!</mark></strong></p>
-                    </p><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
-                    <p class="text-muted"><small>You must be over 18 to sign up to our service.  Please drink responsibly.</small></p>
-                </section>
+        <div class="container-fluid callout-container">
+          <div class="opaque-overlay">&nbsp;</div>
+            <div class="row">
+                <div class="col-12">
+                    <section class="callout jumbotron text-center">
+                        <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                        <hr class="block-divider block-divider-orange">
+                        <p class="lead">Sign up today to start receiving the world's best whiskeys every month. 
+                            <s class="d-none d-sm-inline">€19.99</s>
+                            <span class="d-inline d-sm-none"><br></span>
+                            <strong><mark>First one is free!</mark></strong></p>
+                        </p><button type="button" class="btn  btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+                        <p class="text-muted"><small>You must be over 18 to sign up to our service.  Please drink responsibly.</small></p>
+                    </section>
+                </div>
             </div>
+          
         </div>
         <!-- /.callout -->
         <hr>
 
         <!-- Quotes -->
-        
-        <section class="quotes">
-            <div class="row">
-                <div class="col-12 my-5">
-                    <h2 class="text-uppercase">Quotes:</h2>
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="media">
-                  <div class="d-none d-sm-block">
-                    <img src="images/girl-image.png" alt="Girl Image" class="rounded-circle mr-3" height=100px width=100px>
+        <div class="container quotes-container">
+          <section class="quotes">
+              <div class="row">
+                  <div class="col-12 my-5">
+                      <h2 class="text-uppercase">Quotes:</h2>
                   </div>
-                  <div class="media-body">
-                    <blockquote class="blockquote">
-                      <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                      <p>- Jane Doe</p>
-                    </blockquote>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="media">
+                    <div class="d-none d-sm-block">
+                      <img src="images/girl-image.png" alt="Girl Image" class="rounded-circle mr-3" height=100px width=100px>
+                    </div>
+                    <div class="media-body">
+                      <blockquote class="blockquote">
+                        <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                        <p>- Jane Doe</p>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-12 col-md-6">
+                  <div class="media">
+                    <div class="d-none d-sm-block">
+                      <img src="images/guy-image.png" alt="Girl Image" class="rounded-circle mr-3" height=100px width=100px>
+                    </div>
+                    <div class="media-body">
+                      <blockquote class="blockquote">
+                        <p>I haven't been sober for months!</p>
+                        <p>- John Doe</p>
+                      </blockquote>
+                    </div>
                   </div>
                 </div>
               </div>
-            
-              <div class="col-12 col-md-6">
-                <div class="media">
-                  <div class="d-none d-sm-block">
-                    <img src="images/guy-image.png" alt="Girl Image" class="rounded-circle mr-3" height=100px width=100px>
-                  </div>
-                  <div class="media-body">
-                    <blockquote class="blockquote">
-                      <p>I haven't been sober for months!</p>
-                      <p>- John Doe</p>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </section>
-        
+          </section>
+        </div>
         <!-- /.quotes -->
         <hr>
 
         <!-- Features -->
-        <section class="features">
-          <div class="row">
-              <div class="col-12 my-5">
-                  <h2 class="text-uppercase">Features:</h2>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-12 col-md-6 col-lg-4">
-                  <div class="feature">
-                      <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge-success">NEW!</span></h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                  <div class="feature">
-                      <h3><i class="fa-regular fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-                  </div>
-              </div>
-              <div class="col-12 d-md-none d-lg-block col-lg-4">
-                  <div class="feature">
-                      <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
-                  </div>
-              </div>
-          </div>
-      </section>
+        <div class="features-container">
+          <section class="features">
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h2 class="text-uppercase">Features:</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature">
+                        <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge-success">NEW!</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature">
+                        <h3><i class="fa-regular fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    </div>
+                </div>
+                <div class="col-12 d-md-none d-lg-block col-lg-4">
+                    <div class="feature">
+                        <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+          </section>
+        </div>
         <!-- /.features -->
         <hr>
 
